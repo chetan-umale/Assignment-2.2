@@ -21,4 +21,15 @@ answer:
 5.Data nodes act as slaves and actually serve the read-write requests from clients.Data nodes actually store the blocks and is responsible for creation,deletion and replication of blocks .
 
 
+Q3-Hadoop blocks.
+answer:
+1.A block is the smallest unit of data that can be stored or retrieved from the disk.
+2. HDFS also operates in terms of blocks, but the difference is that block size in hdfs is very large as compared to block size in traditional file systems.
+3.The size of a typical hadoop block is 128 MB.
+4.The blocks are stored on data nodes and have a default replication factor of 3.
+5.The blocks are stored in contiguously which reduces the access time significantly.
+6.The data nodes are responsible for creation,deletion and replication of these blocks.
+7.The metadata associated with hadoop blocks is stored by name node.
+8.Because of replication, these blocks ensure high fault tolerance and availability. 
+
 
